@@ -93,7 +93,7 @@ export class StyleAnalyzer {
   /**
    * Check for consistent quote usage
    */
-  private checkQuotes(code: string, lines: string[]): AnalysisIssue[] {
+  private checkQuotes(code: string, _lines: string[]): AnalysisIssue[] {
     const issues: AnalysisIssue[] = [];
     
     // Count single and double quotes (excluding escaped and template literals)

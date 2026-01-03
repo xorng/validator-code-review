@@ -109,7 +109,7 @@ server.registerTool(
       summary: z.string(),
     },
   },
-  async ({ code, language, focus }) => {
+  async ({ code, language: _language, focus }) => {
     const analysisPromise = [];
     
     if (focus === 'all' || focus === 'quality' || !focus) {
@@ -164,7 +164,7 @@ server.registerTool(
       summary: z.string(),
     },
   },
-  async ({ diff, context }) => {
+  async ({ diff, context: _context }) => {
     const comments = analyzeDiff(diff);
     const hasBlockingIssues = comments.some(c => c.type === 'issue');
     

@@ -139,8 +139,6 @@ export class ComplexityAnalyzer {
       /async\s+function\s+(\w+)\s*\(([^)]*)\)\s*{/g,
     ];
 
-    const lines = code.split('\n');
-
     for (const pattern of functionPatterns) {
       let match;
       pattern.lastIndex = 0;
