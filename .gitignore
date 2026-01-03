@@ -4,3 +4,5 @@ dist/
 .DS_Store
 coverage/
 .nyc_output/
+tsconfig.tsbuildinfo
+
